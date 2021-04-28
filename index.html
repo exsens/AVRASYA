@@ -11,54 +11,114 @@
 
 <body>
 	<div class="global-wrapper">
+		<div class="preloader" id="loader">
+  <div class="lds-ring">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
 		<header class="header" id="header">
 	<div class="container flex header__container">
-			<a href="#header" class="logo header__logo">
-				<picture>
-					<source srcset="images/logo.webp" type="image/webp">
-					<img class="object-fit lazyloaded" width="130" height="60" src="images/logo.jpg"
-						alt="Логотип клиники AVRASYA HASTANESi">
-				</picture>
-			</a>
-
-			<nav class="nav header__nav">
-				<ul class="nav__list flex">
-					<li class="nav__item"><a href="#" class="nav__link">Клиника</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Процедура</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Цены</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Организация</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
-				</ul>
-			</nav>
-
-			<div class="contacts header__contacts">
-				<a href="tel:+79587569814" class="contacts__tel">+7 (958) 756-98-14</a>
+		<a href="#header" class="logo header__logo">
+			<picture>
+				<source srcset="images/logo.webp" type="image/webp">
+				<img class="object-fit lazyloaded" width="130" height="60" src="images/logo.jpg"
+					alt="Логотип клиники AVRASYA HASTANESi">
+			</picture>
+		</a>
+		<nav class="nav header__nav">
+  <ul class="nav__list flex">
+    <li class="nav__item"><a href="#" class="nav__link">Клиника</a></li>
+    <li class="nav__item drop-menu">
+      <button class="drop-menu__btn nav__link" aria-expanded="false" type="button">Процедура</button>
+      <ul class="drop-menu__list drop-menu__list--first" aria-hidden="true">
+        <li class="drop-menu__item">
+          <button class="drop-menu__link tiny-text" type="button">Экстракция графтов </button>
+          <ul class="drop-menu__list drop-menu__list--second">
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Первый этап</a>
+            </li>
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Второй этап</a>
+            </li>
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Третий этап</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop-menu__item">
+          <button class="drop-menu__link tiny-text" type="button">Имплантация</button>
+          <ul class="drop-menu__list drop-menu__list--second">
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Первый этап</a>
+            </li>
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Второй этап</a>
+            </li>
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Третий этап</a>
+            </li>
+          </ul>
+        </li>
+        <li class="drop-menu__item">
+          <button class="drop-menu__link tiny-text" type="button">Послеоперационный период</button>
+          <ul class="drop-menu__list drop-menu__list--second">
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Первый этап</a>
+            </li>
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Второй этап</a>
+            </li>
+            <li class="drop-menu__item">
+              <a href="#" class="drop-menu__link tiny-text">Третий этап</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="nav__item"><a href="#" class="nav__link">Организация</a></li>
+    <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+  </ul>
+</nav>
+		<div class="contacts header__contacts">
+			<button class="contacts__mobile" type="button" aria-label="Открыть контакты">
+				<svg>
+					<use href="images/svgSprite/svgSprite.svg#tel">
+					</use>
+				</svg>
+			</button>
+			<div class="contacts__inner">
+				<div class="contacts__tel-box">
+					<a href="tel:+79587569814" class="contacts__tel">+7 (958) 756-98-14 </a>
+				</div>
 				<div class="contacts__box">
 					<span class="contacts__text">или пишите</span>
 					<ul class="flex social contacts__social">
 						<li class="social__item">
-							<a href="#" class="social__link social__link--whatsapp" title="whatsApp">
+							<a href="#" class="social__link social__link--whatsapp" title="Напиши в whatsApp">
 								<svg>
 									<use href="images/svgSprite/svgSprite.svg#whatsApp"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="social__link" title="telegram">
+							<a href="#" class="social__link" title="Напиши в telegram">
 								<svg>
 									<use href="images/svgSprite/svgSprite.svg#telegram"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="social__link" title="vk">
+							<a href="#" class="social__link" title="Напиши в vk">
 								<svg>
 									<use href="images/svgSprite/svgSprite.svg#vk"></use>
 								</svg>
 							</a>
 						</li>
 						<li class="social__item">
-							<a href="#" class="social__link" title="viber">
+							<a href="#" class="social__link" title="Напиши в viber">
 								<svg>
 									<use href="images/svgSprite/svgSprite.svg#viber"></use>
 								</svg>
@@ -66,11 +126,28 @@
 						</li>
 					</ul>
 				</div>
+				<button class="contacts__callback callback-btn callback-btn--seccol small-text" type="button"
+					data-hystmodal=".callback-modal">Консультация</button>
 			</div>
 		</div>
+		<button class="burger header__burger" type="button" aria-label="Открыть меню с навигацией"><span></span></button>
+	</div>
+	<div class="overlay"></div>
 </header>
 		<main class="main">
-		<section class="hero">
+		<div class="swiper-container hero-slider">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><section class="hero">
+	<div class="hero__bg">
+		<picture>
+			<source srcset="images/hero/slide1x768.jpg" media="(max-width: 768px)">
+			<source srcset="images/hero/slide1x768.webp" type="image/webp" media="(max-width: 768px)">
+			<source srcset="images/hero/slide1.webp" type="image/webp">
+			<img class="object-fit lazyloaded" src="images/hero/slide1.jpg" alt="Фотография операции">
+		</picture>
+	</div>
 	<h1 class="visually-hidden">Трансплантация волос Avrasya Hastanesi</h1>
 	<div class="container hero__container">
 		<p class="hero__suptitle marglrg">Пересадка волос в Москве</p>
@@ -78,7 +155,7 @@
 				Hastanesi</span></h2>
 		<ul class="flex list-row hero__list benefits-mini ">
 			<li class="flex benefits-mini__item">
-				<div class="benefits-mini__icon">
+				<div class="benefits-mini__icon" aria-hidden="true">
 					<svg>
 						<use href="images/svgSprite/svgSprite.svg#cash"></use>
 					</svg>
@@ -86,7 +163,7 @@
 				<p class="tiny-text benefits-mini__text">Стоимость / время: <br> от 50 000₽ / 3 дня</p>
 			</li>
 			<li class="flex benefits-mini__item">
-				<div class="benefits-mini__icon">
+				<div class="benefits-mini__icon" aria-hidden="true">
 					<svg>
 						<use href="images/svgSprite/svgSprite.svg#chat"></use>
 					</svg>
@@ -94,7 +171,7 @@
 				<p class="tiny-text benefits-mini__text">Переводчик, проживание <br> и сопровождение</p>
 			</li>
 			<li class="flex benefits-mini__item">
-				<div class="benefits-mini__icon">
+				<div class="benefits-mini__icon" aria-hidden="true">
 					<svg>
 						<use href="images/svgSprite/svgSprite.svg#approv"></use>
 					</svg>
@@ -103,14 +180,219 @@
 			</li>
 		</ul>
 		<a href="#" class="small-text main-button main-button--midl hero__link">Узнать больше</a>
+		<button class="video-review__button video-button" type="button" data-hystmodal="#video-modal"
+			aria-label="Включить видео отзывы о клиники">
+			<span class="video-button__text">Отзывы о&nbsp;клинике</span>
+			<span class="video-button__icon">
+				<svg>
+					<use href="images/svgSprite/svgSprite.svg#play"></use>
+				</svg>
+			</span>
+		</button>
 	</div>
-</section>
+	<div class="hero-aside">
+		<div class="container-fluid flex hero-aside__container">
+			<span class="tiny-text hero-aside__text" aria-hidden="true">Листайте ниже
+				<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+					preserveAspectRatio="none">
+					<path
+						d="M4.51563 5.70312L11.7344 5.70312L9.41406 8.02343C9.13281 8.30468 9.13281 8.75 9.41406 9.00781C9.69531 9.28906 10.1406 9.28906 10.3984 9.00781L13.9141 5.49219C14.0547 5.35156 14.125 5.16406 14.125 5C14.125 4.8125 14.0547 4.64844 13.9141 4.50781L10.3984 0.992188C10.2578 0.851563 10.0703 0.78125 9.90625 0.78125C9.74219 0.78125 9.55469 0.851563 9.41406 0.992188C9.13281 1.27344 9.13281 1.71875 9.41406 1.97656L11.7344 4.29687L4.51563 4.29687C4.11719 4.29687 3.8125 4.60156 3.8125 5C3.8125 5.39844 4.11719 5.70312 4.51563 5.70312ZM1 4.29687C0.81352 4.29687 0.634677 4.37095 0.502816 4.50281C0.370954 4.63468 0.296875 4.81352 0.296875 5C0.296875 5.18648 0.370954 5.36532 0.502816 5.49718C0.634677 5.62904 0.81352 5.70312 1 5.70312C1.18648 5.70312 1.36532 5.62904 1.49719 5.49718C1.62905 5.36532 1.70313 5.18648 1.70313 5C1.70313 4.81352 1.62905 4.63468 1.49719 4.50281C1.36532 4.37095 1.18648 4.29687 1 4.29687V4.29687Z"
+						fill="inherit" />
+				</svg>
+			</span>
+		</div>
+	</div>
+</section></div>
+    <div class="swiper-slide"><section class="hero">
+	<div class="hero__bg">
+		<picture>
+		<source srcset="images/hero/slide2x768.jpg" media="(max-width: 768px)">
+		<source srcset="images/hero/slide2x768.webp" type="image/webp" media="(max-width: 768px)">
+		<source srcset="images/hero/slide2.webp" type="image/webp">
+		<img class="object-fit lazyloaded" src="images/hero/slide2.jpg" alt="Фотография операции">
+		</picture>
+	</div>
+	<h1 class="visually-hidden">Трансплантация волос Avrasya Hastanesi</h1>
+	<div class="container hero__container">
+		<p class="hero__suptitle marglrg">Пересадка волос в Москве</p>
+		<h2 class="main-title hero__title">Трансплантация волос <br> в одной из лучших клиник Турции<span>Avrasya
+				Hastanesi</span></h2>
+		<ul class="flex list-row hero__list benefits-mini ">
+			<li class="flex benefits-mini__item">
+				<div class="benefits-mini__icon" aria-hidden="true">
+					<svg>
+						<use href="images/svgSprite/svgSprite.svg#cash"></use>
+					</svg>
+				</div>
+				<p class="tiny-text benefits-mini__text">Стоимость / время: <br> от 50 000₽ / 3 дня</p>
+			</li>
+			<li class="flex benefits-mini__item">
+				<div class="benefits-mini__icon" aria-hidden="true">
+					<svg>
+						<use href="images/svgSprite/svgSprite.svg#chat"></use>
+					</svg>
+				</div>
+				<p class="tiny-text benefits-mini__text">Переводчик, проживание <br> и сопровождение</p>
+			</li>
+			<li class="flex benefits-mini__item">
+				<div class="benefits-mini__icon" aria-hidden="true">
+					<svg>
+						<use href="images/svgSprite/svgSprite.svg#approv"></use>
+					</svg>
+				</div>
+				<p class="tiny-text benefits-mini__text">Пожизненная гарантия <br> на пересадку</p>
+			</li>
+		</ul>
+		<a href="#" class="small-text main-button main-button--midl hero__link">Узнать больше</a>
+		<button class="video-review__button video-button" type="button" data-hystmodal="#video-modal"
+			aria-label="Включить видео отзывы о клиники">
+			<span class="video-button__text">Отзывы о&nbsp;клинике</span>
+			<span class="video-button__icon">
+				<svg>
+					<use href="images/svgSprite/svgSprite.svg#play"></use>
+				</svg>
+			</span>
+		</button>
+	</div>
+	<div class="hero-aside">
+		<div class="container-fluid flex hero-aside__container">
+			<span class="tiny-text hero-aside__text" aria-hidden="true">Листайте ниже
+				<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+					preserveAspectRatio="none">
+					<path
+						d="M4.51563 5.70312L11.7344 5.70312L9.41406 8.02343C9.13281 8.30468 9.13281 8.75 9.41406 9.00781C9.69531 9.28906 10.1406 9.28906 10.3984 9.00781L13.9141 5.49219C14.0547 5.35156 14.125 5.16406 14.125 5C14.125 4.8125 14.0547 4.64844 13.9141 4.50781L10.3984 0.992188C10.2578 0.851563 10.0703 0.78125 9.90625 0.78125C9.74219 0.78125 9.55469 0.851563 9.41406 0.992188C9.13281 1.27344 9.13281 1.71875 9.41406 1.97656L11.7344 4.29687L4.51563 4.29687C4.11719 4.29687 3.8125 4.60156 3.8125 5C3.8125 5.39844 4.11719 5.70312 4.51563 5.70312ZM1 4.29687C0.81352 4.29687 0.634677 4.37095 0.502816 4.50281C0.370954 4.63468 0.296875 4.81352 0.296875 5C0.296875 5.18648 0.370954 5.36532 0.502816 5.49718C0.634677 5.62904 0.81352 5.70312 1 5.70312C1.18648 5.70312 1.36532 5.62904 1.49719 5.49718C1.62905 5.36532 1.70313 5.18648 1.70313 5C1.70313 4.81352 1.62905 4.63468 1.49719 4.50281C1.36532 4.37095 1.18648 4.29687 1 4.29687V4.29687Z"
+						fill="inherit" />
+				</svg>
+			</span>
+		</div>
+	</div>
+</section></div>
+    <div class="swiper-slide"><section class="hero">
+	<div class="hero__bg">
+		<picture>
+			<source srcset="images/hero/slide3x768.jpg" media="(max-width: 768px)">
+			<source srcset="images/hero/slide3x768.webp" type="image/webp" media="(max-width: 768px)">
+			<source srcset="images/hero/slide3.webp" type="image/webp">
+			<img class="object-fit lazyloaded" src="images/hero/slide3.jpg" alt="Фотография операции">
+		</picture>
+	</div>
+	<h1 class="visually-hidden">Трансплантация волос Avrasya Hastanesi</h1>
+	<div class="container hero__container">
+		<p class="hero__suptitle marglrg">Пересадка волос в Москве</p>
+		<h2 class="main-title hero__title">Трансплантация волос <br> в одной из лучших клиник Турции<span>Avrasya
+				Hastanesi</span></h2>
+		<ul class="flex list-row hero__list benefits-mini ">
+			<li class="flex benefits-mini__item">
+				<div class="benefits-mini__icon" aria-hidden="true">
+					<svg>
+						<use href="images/svgSprite/svgSprite.svg#cash"></use>
+					</svg>
+				</div>
+				<p class="tiny-text benefits-mini__text">Стоимость / время: <br> от 50 000₽ / 3 дня</p>
+			</li>
+			<li class="flex benefits-mini__item">
+				<div class="benefits-mini__icon" aria-hidden="true">
+					<svg>
+						<use href="images/svgSprite/svgSprite.svg#chat"></use>
+					</svg>
+				</div>
+				<p class="tiny-text benefits-mini__text">Переводчик, проживание <br> и сопровождение</p>
+			</li>
+			<li class="flex benefits-mini__item">
+				<div class="benefits-mini__icon" aria-hidden="true">
+					<svg>
+						<use href="images/svgSprite/svgSprite.svg#approv"></use>
+					</svg>
+				</div>
+				<p class="tiny-text benefits-mini__text">Пожизненная гарантия <br> на пересадку</p>
+			</li>
+		</ul>
+		<a href="#" class="small-text main-button main-button--midl hero__link">Узнать больше</a>
+		<button class="video-review__button video-button" type="button" data-hystmodal="#video-modal"
+			aria-label="Включить видео отзывы о клиники">
+			<span class="video-button__text">Отзывы о&nbsp;клинике</span>
+			<span class="video-button__icon">
+				<svg>
+					<use href="images/svgSprite/svgSprite.svg#play"></use>
+				</svg>
+			</span>
+		</button>
+	</div>
+	<div class="hero-aside">
+		<div class="container-fluid flex hero-aside__container">
+			<span class="tiny-text hero-aside__text" aria-hidden="true">Листайте ниже
+				<svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+					preserveAspectRatio="none">
+					<path
+						d="M4.51563 5.70312L11.7344 5.70312L9.41406 8.02343C9.13281 8.30468 9.13281 8.75 9.41406 9.00781C9.69531 9.28906 10.1406 9.28906 10.3984 9.00781L13.9141 5.49219C14.0547 5.35156 14.125 5.16406 14.125 5C14.125 4.8125 14.0547 4.64844 13.9141 4.50781L10.3984 0.992188C10.2578 0.851563 10.0703 0.78125 9.90625 0.78125C9.74219 0.78125 9.55469 0.851563 9.41406 0.992188C9.13281 1.27344 9.13281 1.71875 9.41406 1.97656L11.7344 4.29687L4.51563 4.29687C4.11719 4.29687 3.8125 4.60156 3.8125 5C3.8125 5.39844 4.11719 5.70312 4.51563 5.70312ZM1 4.29687C0.81352 4.29687 0.634677 4.37095 0.502816 4.50281C0.370954 4.63468 0.296875 4.81352 0.296875 5C0.296875 5.18648 0.370954 5.36532 0.502816 5.49718C0.634677 5.62904 0.81352 5.70312 1 5.70312C1.18648 5.70312 1.36532 5.62904 1.49719 5.49718C1.62905 5.36532 1.70313 5.18648 1.70313 5C1.70313 4.81352 1.62905 4.63468 1.49719 4.50281C1.36532 4.37095 1.18648 4.29687 1 4.29687V4.29687Z"
+						fill="inherit" />
+				</svg>
+			</span>
+		</div>
+	</div>
+</section></div>
+  </div>
+</div>
+<div class="hero-navigation">
+  <div class="container flex hero-navigation__container">
+    <button class="flex navigation__button navigation__button--prev hero__navigation--prev"
+      aria-label="Переключить на предыдущий слайд">
+      <svg>
+        <use href="images/svgSprite/svgSprite.svg#arrow"></use>
+      </svg>
+    </button>
+    <button class="flex navigation__button navigation__button--next hero__navigation--next"
+      aria-label="Переключить на следующий слайд">
+      <svg>
+        <use href="images/svgSprite/svgSprite.svg#arrow"></use>
+      </svg>
+    </button>
+  </div>
+</div> 
+
 		</main>
 		<footer class="footer">
-
 		</footer>
 	</div>
-
+	<div class="callback-modal hystmodal" aria-hidden="true">
+  <div class="hystmodal__wrap">
+    <div class="hystmodal__window callback" role="dialog" aria-modal="true">
+      <button data-hystclose class="hystmodal__close">Закрыть</button>
+      <h2 class="callback__title">
+        Заказать консультацию
+      </h2>
+      <p class="callback__descr tiny-text">
+        Введите ваше имя и телефон в форму ниже,
+        мы свяжемся с вами в течении дня!
+      </p>
+      <form class="callback__form">
+        <input class="callback__field" type="text" placeholder="Ваше имя:">
+        <input class="callback__field" type="number" placeholder="Телефон:">
+        <label class="callback__pers-information checkbox" for="personal-information">
+          <input class="checkbox__input" id="personal-information" type="checkbox"
+            aria-label="Согласен с правами обработки персональных данных">
+          <span class="checkbox__text tiny-text">Я согласен с</span> <a href="#"
+            class="checkbox__link tiny-text">правами обработки
+            персональных данных</a>
+        </label>
+        <button class="callback__submit main-button" type="submit" disabled>Хочу консультацию</button>
+      </form>
+    </div>
+  </div>
+</div>
+	<div class="video-review-modal hystmodal" id="video-modal" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<button data-hystclose class="video-review-modal__close">Закрыть</button>
+		<div class="hystmodal__window video-review__content" role="dialog" aria-modal="true">
+			<div class="lazy-iframe-container">
+				<iframe class="iframe-youtube-lazy-video lazy" data-src="https://www.youtube.com/embed/yaxY_cLW8bA?enablejsapi=1"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen aria-label="Видео о работе клиники">
+				</iframe>
+			</div>
+		</div>
+	</div>
 	<script src="js/main.js"></script>
 </body>
 
