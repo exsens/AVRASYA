@@ -93,7 +93,7 @@
 				<div class="contacts__tel-box">
 					<a href="tel:+79587569814" class="contacts__tel">+7 (958) 756-98-14 </a>
 				</div>
-				<div class="contacts__box">
+				<div class="contacts__box flex">
 					<span class="contacts__text">или пишите</span>
 					<ul class="flex social contacts__social">
 						<li class="social__item">
@@ -135,7 +135,8 @@
 	<div class="overlay"></div>
 </header>
 		<main class="main">
-		<div class="swiper-container hero-slider">
+		
+<div class="swiper-container hero-slider">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
@@ -202,7 +203,8 @@
 			</span>
 		</div>
 	</div>
-</section></div>
+</section>
+</div>
     <div class="swiper-slide"><section class="hero">
 	<div class="hero__bg">
 		<picture>
@@ -244,7 +246,7 @@
 			</li>
 		</ul>
 		<a href="#" class="small-text main-button main-button--midl hero__link">Узнать больше</a>
-		<button class="video-review__button video-button" type="button" data-hystmodal="#video-modal"
+		<button class="video-review__button video-button" type="button" data-hystmodal="#video-modal2"
 			aria-label="Включить видео отзывы о клиники">
 			<span class="video-button__text">Отзывы о&nbsp;клинике</span>
 			<span class="video-button__icon">
@@ -266,7 +268,8 @@
 			</span>
 		</div>
 	</div>
-</section></div>
+</section>
+</div>
     <div class="swiper-slide"><section class="hero">
 	<div class="hero__bg">
 		<picture>
@@ -332,27 +335,75 @@
 	</div>
 </section></div>
   </div>
+  <div class="hero-navigation">
+    <div class="container flex hero-navigation__container">
+      <button class="flex navigation__button navigation__button--prev hero__navigation--prev"
+        aria-label="Переключить на предыдущий слайд">
+        <svg>
+          <use href="images/svgSprite/svgSprite.svg#arrow"></use>
+        </svg>
+      </button>
+      <button class="flex navigation__button navigation__button--next hero__navigation--next"
+        aria-label="Переключить на следующий слайд">
+        <svg>
+          <use href="images/svgSprite/svgSprite.svg#arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div> 
+  
 </div>
-<div class="hero-navigation">
-  <div class="container flex hero-navigation__container">
-    <button class="flex navigation__button navigation__button--prev hero__navigation--prev"
-      aria-label="Переключить на предыдущий слайд">
-      <svg>
-        <use href="images/svgSprite/svgSprite.svg#arrow"></use>
-      </svg>
-    </button>
-    <button class="flex navigation__button navigation__button--next hero__navigation--next"
-      aria-label="Переключить на следующий слайд">
-      <svg>
-        <use href="images/svgSprite/svgSprite.svg#arrow"></use>
-      </svg>
-    </button>
-  </div>
-</div> 
 
 		</main>
 		<footer class="footer">
-		</footer>
+	<div class="container flex footer__container">
+		<div class="footer__logo flex">
+			<picture>
+				<source srcset="images/footer/logo.webp" type="image/webp">
+				<img class="object-fit lazyloaded" width="178px" height="70px" src="images/footer/logo.jpg"
+					alt="Логотип AVRASYA">
+			</picture>
+		</div>
+		<div class="footer__information">
+			<h2 class="footer__title">Пользователю</h2>
+			<ul class="user-information footer__information-list">
+				<li class="user-information__item"><a href="#" class="user-information__link small-text">Официальный сайт
+						больницы</a>
+				</li>
+				<li class="user-information__item"><a href="#" class="user-information__link small-text">Политика
+						конфиденциальности</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__contacts">
+			<h2 class="footer__title">Контакты в России</h2>
+			<div class="contacts flex footer__contacts-box">
+				<div class="contacts__tel-box footer__tel">
+					<a href="tel:+79587569814" class="contacts__tel svg-icon">
+						<svg class="object-fit" width="18px" height="18px">
+							<use href="images/svgSprite/svgSprite.svg#phone"></use>
+						</svg>
+						<span>+7 (958) 756-98-14</span>
+					</a>
+				</div>
+				<button class="callback-btn callback-btn--thirdcol small-text footer__btn" type="button"
+					data-hystmodal=".callback-modal">Получить консультацию</button>
+				<a href="mailto:international@avrasyahospital.ru" class="svg-icon small-text footer__mail">
+					<svg width="18px" height="18px">
+						<use href="images/svgSprite/svgSprite.svg#mail"></use>
+					</svg>
+					<span>international@avrasyahospital.ru</span>
+				</a>
+				<a href="https://yandex.ru/maps/-/CCU4ADTtxA" class="svg-icon small-text footer__geo">
+					<svg width="18px" height="18px">
+						<use href="images/svgSprite/svgSprite.svg#geo"></use>
+					</svg>
+					<span>Москва. ул. Кавказкая 78</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</footer>
 	</div>
 	<div class="callback-modal hystmodal" aria-hidden="true">
   <div class="hystmodal__wrap">
@@ -386,6 +437,19 @@
 		<div class="hystmodal__window video-review__content" role="dialog" aria-modal="true">
 			<div class="lazy-iframe-container">
 				<iframe class="iframe-youtube-lazy-video lazy" data-src="https://www.youtube.com/embed/yaxY_cLW8bA?enablejsapi=1"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen aria-label="Видео о работе клиники">
+				</iframe>
+			</div>
+		</div>
+	</div>
+	<div class="video-review-modal hystmodal" id="video-modal2" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<button data-hystclose class="video-review-modal__close">Закрыть</button>
+		<div class="hystmodal__window video-review__content" role="dialog" aria-modal="true">
+			<div class="lazy-iframe-container">
+				<iframe class="iframe-youtube-lazy-video lazy" data-src="https://www.youtube.com/embed/8cgkYNDdyEI?enablejsapi=1"
 					frameborder="0"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 					allowfullscreen aria-label="Видео о работе клиники">
