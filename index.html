@@ -24,7 +24,7 @@
 		<a href="#header" class="logo header__logo">
 			<picture>
 				<source srcset="images/logo.webp" type="image/webp">
-				<img class="object-fit lazyloaded" width="130" height="60" src="images/logo.jpg"
+				<img class="object-fit lazyload" width="130" height="60" src="images/logo.jpg"
 					alt="Логотип клиники AVRASYA HASTANESi">
 			</picture>
 		</a>
@@ -146,7 +146,8 @@
 			<!-- <source srcset="images/hero/slide1x768.jpg" media="(max-width: 768px)">
 			<source srcset="images/hero/slide1x768.webp" type="image/webp" media="(max-width: 768px)"> -->
 			<source srcset="images/hero/slide1.webp" type="image/webp">
-			<img class="object-fit lazyloaded" src="images/hero/slide1.jpg" alt="Фотография операции">
+			<img class="object-fit lazyload" src="images/hero/slide1.jpg" alt="Фотография операции">
+			
 		</picture>
 	</div>
 	<h1 class="visually-hidden">Трансплантация волос Avrasya Hastanesi</h1>
@@ -210,9 +211,10 @@
 		<picture>
 		<!-- <source srcset="images/hero/slide2x768.jpg" media="(max-width: 768px)">
 		<source srcset="images/hero/slide2x768.webp" type="image/webp" media="(max-width: 768px)"> -->
-		<source srcset="images/hero/slide2.webp" type="image/webp">
-		<img class="object-fit lazyloaded" src="images/hero/slide2.jpg" alt="Фотография операции">
+		<source data-srcset="images/hero/slide2.webp" type="image/webp">
+		<img class="object-fit swiper-lazy" data-src="images/hero/slide2.jpg" alt="Фотография операции">
 		</picture>
+		<div class="swiper-lazy-preloader"></div>
 	</div>
 	<h1 class="visually-hidden">Трансплантация волос Avrasya Hastanesi</h1>
 	<div class="container hero__container">
@@ -275,9 +277,10 @@
 		<picture>
 			<!-- <source srcset="images/hero/slide3x768.jpg" media="(max-width: 768px)">
 			<source srcset="images/hero/slide3x768.webp" type="image/webp" media="(max-width: 768px)"> -->
-			<source srcset="images/hero/slide3.webp" type="image/webp">
-			<img class="object-fit lazyloaded" src="images/hero/slide3.jpg" alt="Фотография операции">
+			<source data-srcset="images/hero/slide3.webp" type="image/webp">
+			<img class="object-fit swiper-lazy" data-src="images/hero/slide3.jpg" alt="Фотография операции">
 		</picture>
+		<div class="swiper-lazy-preloader"></div>
 	</div>
 	<h1 class="visually-hidden">Трансплантация волос Avrasya Hastanesi</h1>
 	<div class="container hero__container">
@@ -360,7 +363,7 @@
     <p class="section__subtitle med-text reputation__subtitle">
       В Avrasya Hastanesi приезжают со всего мира. Передовые технологии в микрохирургии и опыт врачей гарантируют
       превосходную трансплантацию на долгие годы.</p>
-    <ul class="benefits flex list-row reputation__list">
+    <ul class="benefits flex list-row margbig reputation__list">
   <li class="benefits__item">
     <div class="benefits__icon" aria-hidden="true">
       <svg class="object-fit">
@@ -391,13 +394,13 @@
     <div class="thumbs__img" data-hystmodal=".img-thumbs-full-1">
       <picture>
         <source srcset="images/thumbs/1.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/1.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/1.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
     <div class="thumbs__img thumbs__img--big" data-hystmodal=".img-thumbs-full-2">
       <picture>
         <source srcset="images/thumbs/2.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/2.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/2.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
   </div>
@@ -405,20 +408,20 @@
     <div class="thumbs__img thumbs__img--big" data-hystmodal=".img-thumbs-full-3">
       <picture>
         <source srcset="images/thumbs/3.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/3.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/3.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
     <div class="thumbs__img-box flex">
       <div class="thumbs__img" data-hystmodal=".img-thumbs-full-4">
         <picture>
           <source srcset="images/thumbs/4.webp" type="image/webp">
-          <img class="object-fit lazyloaded" src="images/thumbs/4.jpg" alt="Фотография процесса пересадки волос">
+          <img class="object-fit lazyload" src="images/thumbs/4.jpg" alt="Фотография процесса пересадки волос">
         </picture>
       </div>
       <div class="thumbs__img" data-hystmodal=".img-thumbs-full-5">
         <picture>
           <source srcset="images/thumbs/5.webp" type="image/webp">
-          <img class="object-fit lazyloaded" src="images/thumbs/5.jpg" alt="Фотография процесса пересадки волос">
+          <img class="object-fit lazyload" src="images/thumbs/5.jpg" alt="Фотография процесса пересадки волос">
         </picture>
       </div>
     </div>
@@ -428,13 +431,13 @@
     <div class="thumbs__img" data-hystmodal=".img-thumbs-full-6">
       <picture>
         <source srcset="images/thumbs/6.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/6.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/6.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
     <div class="thumbs__img thumbs__img--big" data-hystmodal=".img-thumbs-full-7">
       <picture>
         <source srcset="images/thumbs/7.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/7.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/7.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
   </div>
@@ -442,13 +445,13 @@
     <div class="thumbs__img" data-hystmodal=".img-thumbs-full-9">
       <picture>
         <source srcset="images/thumbs/9.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/9.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/9.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
     <div class="thumbs__img thumbs__img--big" data-hystmodal=".img-thumbs-full-8">
       <picture>
         <source srcset="images/thumbs/8.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/8.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/8.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
   </div>
@@ -456,13 +459,13 @@
     <div class="thumbs__img" data-hystmodal=".img-thumbs-full-10">
       <picture>
         <source srcset="images/thumbs/10.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/10.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/10.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
     <div class="thumbs__img thumbs__img--big" data-hystmodal=".img-thumbs-full-11">
       <picture>
         <source srcset="images/thumbs/11.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/thumbs/11.jpg" alt="Фотография процесса пересадки волос">
+        <img class="object-fit lazyload" src="images/thumbs/11.jpg" alt="Фотография процесса пересадки волос">
       </picture>
     </div>
   </div>
@@ -476,7 +479,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/1.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/1.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/1.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -489,7 +492,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/2.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/2.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/2.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -502,7 +505,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/3.webp" type="image/webp">
-          <img class="object-fit lazyloaded" data-src="images/thumbs/full-page/3.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/3.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -515,7 +518,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/4.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/4.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/4.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -528,7 +531,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/5.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/5.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/5.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -541,7 +544,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/6.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/6.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/6.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -554,7 +557,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/7.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/7.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/7.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -567,7 +570,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/8.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/8.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/8.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -580,7 +583,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/9.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/9.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/9.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -593,7 +596,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/10.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/10.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/10.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -606,7 +609,7 @@
         <button data-hystclose class="hystmodal__close">Закрыть</button>
         <picture>
           <source class="lazy-modal" data-srcset="images/thumbs/full-page/11.webp" type="image/webp">
-          <img class="object-fit lazyloaded lazy-modal" data-src="images/thumbs/full-page/11.jpg"
+          <img class="object-fit lazy-modal" data-src="images/thumbs/full-page/11.jpg"
             alt="Фотография процесса пересадки волос">
         </picture>
       </div>
@@ -621,7 +624,7 @@
     <div class="motivation__images">
       <picture>
         <source srcset="images/motivation/osman.webp" type="image/webp">
-        <img class="object-fit lazyloaded" src="images/motivation/osman.jpg" width="440" height="656"
+        <img class="object-fit lazyload" src="images/motivation/osman.jpg" width="440" height="656"
           alt="Главный врач клиники - Осман Тайфун">
       </picture>
     </div>
@@ -648,7 +651,7 @@
         <div class="signature__img">
           <picture>
             <source srcset="images/motivation/signature.webp" type="image/webp">
-            <img class="lazyloaded" src="images/motivation/signature.jpg" alt="Подпись: Осман Тайфун">
+            <img class="lazyload" src="images/motivation/signature.jpg" alt="Подпись: Осман Тайфун">
           </picture>
         </div>
       </div>
@@ -665,7 +668,7 @@
         <div class="stages-list__photo">
           <picture>
             <source srcset="images/fue/1.webp" type="image/webp">
-            <img class="object-fit lazyloaded" src="images/fue/1.jpg" alt="Процесс первого этапа">
+            <img class="object-fit lazyload" src="images/fue/1.jpg" alt="Процесс первого этапа">
           </picture>
         </div>
         <div class="stages-list__descr flex">
@@ -678,7 +681,7 @@
         <div class="stages-list__photo">
           <picture>
             <source srcset="images/fue/2.webp" type="image/webp">
-            <img class="object-fit lazyloaded" src="images/fue/2.jpg" alt="Процесс второго этапа">
+            <img class="object-fit lazyload" src="images/fue/2.jpg" alt="Процесс второго этапа">
           </picture>
         </div>
         <div class="stages-list__descr flex">
@@ -692,7 +695,7 @@
         <div class="stages-list__photo">
           <picture>
             <source srcset="images/fue/3.webp" type="image/webp">
-            <img class="object-fit lazyloaded" src="images/fue/3.jpg" alt="Процесс третьего этапа">
+            <img class="object-fit lazyload" src="images/fue/3.jpg" alt="Процесс третьего этапа">
           </picture>
         </div>
         <div class="stages-list__descr flex">
@@ -704,13 +707,216 @@
     </ol>
   </div>
 </section>
+		<section class="section fue-result">
+  <div class="container fue-result__container">
+    <h2 class="main-title fue-result__title"> Сохраните результаты FUE трансплантации на всю жизнь</h2>
+    <div class="swiper-container margbig fue-result-slider">
+      <div class="swiper-wrapper" id="toSlide">
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/1.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/1.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/2.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/2.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/3.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/3.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/4.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/4.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/5.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/5.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/6.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/6.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/7.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/7.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/8.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/8.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide fue-result-slider__slide">
+          <div class="fue-result-slider__images">
+            <picture>
+              <source data-srcset="images/fue-slider/9.webp" type="image/webp">
+              <img class="object-fit swiper-lazy" data-src="images/fue-slider/9.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+          <div class="swiper-lazy-preloader"></div>
+        </div>
+      </div>
+      <div class="fue-result-slider__navigation flex">
+        <button class="flex navigation__button navigation__button--prev fue-result-slider__prev"
+          aria-label="Переключить на предыдущий слайд">
+          <svg>
+            <use href="images/svgSprite/svgSprite.svg#arrow"></use>
+          </svg>
+        </button>
+        <button class="flex navigation__button navigation__button--next fue-result-slider__next"
+          aria-label="Переключить на следующий слайд">
+          <svg>
+            <use href="images/svgSprite/svgSprite.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="swiper-container marglrg fue-result-thumbs">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/1.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/1.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/2.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/2.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/3.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/3.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/4.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/4.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/5.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/5.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/6.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/6.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/7.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/7.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/8.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/8.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+        <div class="swiper-slide fue-result-thumbs__slide">
+          <div class="fue-result__thumb">
+            <picture>
+              <source srcset="images/fue-slider/9.webp" type="image/webp">
+              <img class="object-fit lazyload" src="images/fue-slider/9.jpg"
+                alt="Фотография результата операции. До / После">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#" class="fue-result__link small-text">Посмотрите больше результатов пересадки волос до и после</a>
+  </div>
+
+
+</section>
 		</main>
 		<footer class="footer">
 	<div class="container flex footer__container">
 		<div class="footer__logo flex">
 			<picture>
 				<source srcset="images/footer/logo.webp" type="image/webp">
-				<img class="object-fit lazyloaded" width="178px" height="70px" src="images/footer/logo.jpg"
+				<img class="object-fit lazyload" width="178px" height="70px" src="images/footer/logo.jpg"
 					alt="Логотип AVRASYA">
 			</picture>
 		</div>
