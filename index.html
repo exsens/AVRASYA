@@ -181,7 +181,7 @@
 				<p class="tiny-text benefits-mini__text">Пожизненная гарантия <br> на пересадку</p>
 			</li>
 		</ul>
-		<a href="#" class="small-text main-button main-button--midl hero__link">Узнать больше</a>
+		<button class="small-text main-button main-button--midl hero__button" type="button" data-hystmodal=".callback-modal">Узнать больше</button>
 		<button class="video-review__button video-button" type="button" data-hystmodal="#video-modal"
 			aria-label="Включить видео отзывы о клиники">
 			<span class="video-button__text">Отзывы о&nbsp;клинике</span>
@@ -247,7 +247,7 @@
 				<p class="tiny-text benefits-mini__text">Пожизненная гарантия <br> на пересадку</p>
 			</li>
 		</ul>
-		<a href="#" class="small-text main-button main-button--midl hero__link">Узнать больше</a>
+		<button class="small-text main-button main-button--midl hero__button" type="button" data-hystmodal=".callback-modal">Узнать больше</button>
 		<button class="video-review__button video-button" type="button" data-hystmodal="#video-modal2"
 			aria-label="Включить видео отзывы о клиники">
 			<span class="video-button__text">Отзывы о&nbsp;клинике</span>
@@ -313,7 +313,7 @@
 				<p class="tiny-text benefits-mini__text">Пожизненная гарантия <br> на пересадку</p>
 			</li>
 		</ul>
-		<a href="#" class="small-text main-button main-button--midl hero__link">Узнать больше</a>
+		<button class="small-text main-button main-button--midl hero__button" type="button" data-hystmodal=".callback-modal">Узнать больше</button>
 		<button class="video-review__button video-button" type="button" data-hystmodal="#video-modal"
 			aria-label="Включить видео отзывы о клиники">
 			<span class="video-button__text">Отзывы о&nbsp;клинике</span>
@@ -1008,6 +1008,30 @@
     </div>
   </div>
 </section>
+		<section class="consultation consultation--bg1">
+  <div class="container consultation__container">
+    <div class="consultation__inner">
+      <h2 class="main-title margsmall consultation__title">Обращайтесь за консультацией</h2>
+      <p class="med-text consultation__subtitle">Наверняка у вас есть вопросы, ответы на которые можно получить за несколько
+        минут по телефону, нежели пытаться разобраться самостоятельно.</p>
+      <form action="#" class="callback__form consultation__form">
+        <div class="flex margsmall consultation__fields">
+          <input class="field consultation__field" type="text" placeholder="Ваше имя:">
+          <input class="field consultation__field" type="number" placeholder="Телефон:">
+        </div>
+        <label class="callback__pers-information checkbox" for="personal-information">
+          <input class="checkbox__input" id="personal-information" type="checkbox"
+            aria-label="Согласен с правами обработки персональных данных">
+          <span class="checkbox__text tiny-text">Я согласен с</span> <a href="#"
+            class="checkbox__link tiny-text">правами
+            обработки
+            персональных данных</a>
+        </label>
+        <button class="main-button main-button--midl consultation__button" type="submit" disabled>Хочу консультацию</button>
+      </form>
+    </div>
+  </div>
+</section>
 		</main>
 		<footer class="footer">
 	<div class="container flex footer__container">
@@ -1071,8 +1095,8 @@
         мы свяжемся с вами в течении дня!
       </p>
       <form class="callback__form">
-        <input class="callback__field" type="text" placeholder="Ваше имя:">
-        <input class="callback__field" type="number" placeholder="Телефон:">
+        <input class="field callback__field" type="text" placeholder="Ваше имя:">
+        <input class="field callback__field" type="number" placeholder="Телефон:">
         <label class="callback__pers-information checkbox" for="personal-information">
           <input class="checkbox__input" id="personal-information" type="checkbox"
             aria-label="Согласен с правами обработки персональных данных">
