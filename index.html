@@ -648,7 +648,7 @@
           <span class="signature__full-name" aria-label="Автор текста">
             Osman Tayfun Oğuzoğlu
           </span>
-          <span class="signature__position" aria-label="Должность в на">
+          <span class="signature__position" aria-label="Должность в нашей клиники">
             главный врач клиники отделения трихологии
           </span>
         </div>
@@ -1016,22 +1016,24 @@
   <div class="container consultation__container">
     <div class="consultation__inner">
       <h2 class="main-title margsmall consultation__title">Обращайтесь за консультацией</h2>
-      <p class="section__subtitle med-text consultation__subtitle">Наверняка у вас есть вопросы, ответы на которые можно получить за несколько
+      <p class="section__subtitle med-text consultation__subtitle">Наверняка у вас есть вопросы, ответы на которые можно
+        получить за несколько
         минут по телефону, нежели пытаться разобраться самостоятельно.</p>
       <form action="#" class="callback__form consultation__form">
         <div class="flex margsmall consultation__fields">
           <input class="field consultation__field" type="text" placeholder="Ваше имя:">
           <input class="field consultation__field" type="number" placeholder="Телефон:">
         </div>
-        <label class="callback__pers-information checkbox" for="personal-information">
-          <input class="checkbox__input" id="personal-information" type="checkbox"
+        <label class="callback__pers-information checkbox" for="personal1">
+          <input class="checkbox__input checkbox-agree" id="personal1" type="checkbox"
             aria-label="Согласен с правами обработки персональных данных">
           <span class="checkbox__text tiny-text">Я согласен с</span> <a href="#"
             class="checkbox__link tiny-text">правами
             обработки
             персональных данных</a>
         </label>
-        <button class="main-button main-button--midl consultation__button" type="submit" disabled>Хочу консультацию</button>
+        <button class="callback__submit main-button main-button--midl consultation__button" type="submit" disabled>Хочу
+          консультацию</button>
       </form>
     </div>
   </div>
@@ -1246,15 +1248,15 @@
           <input class="field consultation__field" type="text" placeholder="Ваше имя:">
           <input class="field consultation__field" type="number" placeholder="Телефон:">
         </div>
-        <label class="callback__pers-information checkbox" for="personal-information">
-          <input class="checkbox__input" id="personal-information" type="checkbox"
+        <label class="callback__pers-information checkbox" for="personal2">
+          <input class="checkbox__input checkbox-agree" id="personal2" type="checkbox"
             aria-label="Согласен с правами обработки персональных данных">
           <span class="checkbox__text tiny-text">Я согласен с</span> <a href="#"
             class="checkbox__link tiny-text">правами
             обработки
             персональных данных</a>
         </label>
-        <button class="main-button main-button--midl consultation__button" type="submit" disabled>Хочу
+        <button class="callback__submit main-button main-button--midl consultation__button" type="submit" disabled>Хочу
           консультацию</button>
       </form>
     </div>
@@ -1266,7 +1268,7 @@
 		<div class="footer__logo flex">
 			<picture>
 				<source srcset="images/footer/logo.webp" type="image/webp">
-				<img class="object-fit lazyload" width="178px" height="70px" src="images/footer/logo.jpg"
+				<img class="object-fit lazyload" width="178" height="70" src="images/footer/logo.jpg"
 					alt="Логотип AVRASYA">
 			</picture>
 		</div>
@@ -1286,7 +1288,7 @@
 			<div class="contacts flex footer__contacts-box">
 				<div class="contacts__tel-box footer__tel">
 					<a href="tel:+79587569814" class="contacts__tel svg-icon">
-						<svg class="object-fit" width="18px" height="18px">
+						<svg class="object-fit" width="18" height="18">
 							<use href="images/svgSprite/svgSprite.svg#phone"></use>
 						</svg>
 						<span>+7 (958) 756-98-14</span>
@@ -1295,13 +1297,13 @@
 				<button class="callback-btn callback-btn--thirdcol small-text footer__btn"
 					data-hystmodal=".callback-modal">Получить консультацию</button>
 				<a href="mailto:international@avrasyahospital.ru" class="svg-icon small-text footer__mail">
-					<svg width="18px" height="18px">
+					<svg width="18" height="18">
 						<use href="images/svgSprite/svgSprite.svg#mail"></use>
 					</svg>
 					<span>international@avrasyahospital.ru</span>
 				</a>
 				<a href="https://yandex.ru/maps/-/CCU4ADTtxA" class="svg-icon small-text footer__geo">
-					<svg width="18px" height="18px">
+					<svg width="18" height="18">
 						<use href="images/svgSprite/svgSprite.svg#geo"></use>
 					</svg>
 					<span>Москва. ул. Кавказкая 78</span>
@@ -1322,11 +1324,11 @@
         Введите ваше имя и телефон в форму ниже,
         мы свяжемся с вами в течении дня!
       </p>
-      <form class="callback__form">
+      <form class="callback__form form">
         <input class="field callback__field" type="text" placeholder="Ваше имя:">
         <input class="field callback__field" type="number" placeholder="Телефон:">
-        <label class="callback__pers-information checkbox" for="personal-information">
-          <input class="checkbox__input" id="personal-information" type="checkbox"
+        <label class="callback__pers-information checkbox" for="personal">
+          <input class="checkbox__input checkbox-agree" id="personal" type="checkbox"
             aria-label="Согласен с правами обработки персональных данных">
           <span class="checkbox__text tiny-text">Я согласен с</span> <a href="#"
             class="checkbox__link tiny-text">правами обработки
